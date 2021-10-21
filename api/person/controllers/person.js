@@ -1,0 +1,11 @@
+'use strict';
+const { sanitizeEntity } = require('strapi-utils');
+
+module.exports = {
+  async findOne(ctx) {
+    const { slug } = ctx.params;
+
+    const entity = await strapi.services.person.findOne({ slug });
+    return sanitizeEntity(entity, { model: strapi.models.person });
+  },
+};

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hymnaries",
+      "handler": "hymnary.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hymnaries/count",
+      "handler": "hymnary.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hymnaries/:slug",
+      "handler": "hymnary.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hymnaries",
+      "handler": "hymnary.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hymnaries/:id",
+      "handler": "hymnary.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hymnaries/:id",
+      "handler": "hymnary.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

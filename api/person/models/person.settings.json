@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "person",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "view_name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "birth_year": {
+      "type": "integer"
+    },
+    "birth_month": {
+      "type": "integer"
+    },
+    "birth_day": {
+      "type": "integer"
+    },
+    "birth_place": {
+      "type": "string"
+    },
+    "death_year": {
+      "type": "integer"
+    },
+    "death_month": {
+      "type": "integer"
+    },
+    "death_day": {
+      "type": "integer"
+    },
+    "death_place": {
+      "type": "string"
+    },
+    "burial_place": {
+      "type": "string"
+    },
+    "info": {
+      "type": "richtext"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
