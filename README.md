@@ -1,3 +1,3 @@
-# Strapi application
+# hinariocentral-api
 
-A quick description of your strapi application
+hinariocentral.net API
