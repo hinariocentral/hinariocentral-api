@@ -29,15 +29,8 @@
     "meter": {
       "type": "string"
     },
-    "ly": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "ly_url": {
+      "type": "string"
     },
     "pdf": {
       "model": "file",

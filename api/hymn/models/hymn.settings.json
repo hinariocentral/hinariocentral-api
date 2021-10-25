@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "seq_number": {
+    "hymn_number": {
       "type": "integer",
       "required": true
     },
@@ -25,12 +25,12 @@
       "required": true,
       "unique": true
     },
+    "author": {
+      "model": "person"
+    },
     "year": {
       "type": "integer",
       "required": true
-    },
-    "author": {
-      "model": "person"
     },
     "tune": {
       "model": "tune"
@@ -41,15 +41,8 @@
     "lyrics": {
       "type": "richtext"
     },
-    "ly": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "ly_url": {
+      "type": "string"
     },
     "pdf": {
       "model": "file",
