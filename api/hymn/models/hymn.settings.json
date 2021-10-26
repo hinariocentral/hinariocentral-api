@@ -29,8 +29,7 @@
       "model": "person"
     },
     "year": {
-      "type": "integer",
-      "required": true
+      "type": "integer"
     },
     "tune": {
       "model": "tune"
