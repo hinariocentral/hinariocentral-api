@@ -37,6 +37,9 @@
     "tune": {
       "model": "tune"
     },
+    "meter": {
+      "type": "string"
+    },
     "hymnary": {
       "model": "hymnary"
     },
