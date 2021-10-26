@@ -27,6 +27,7 @@ module.exports = {
   async find(ctx) {
     const entities = await strapi.query("hymn").find(ctx.query, [
       "author",
+      "translator",
       "tune",
       "hymnary",
       "preview"
@@ -41,6 +42,8 @@ module.exports = {
     const entity = await strapi.services.hymn.findOne({ slug }, [
       "author",
       "author.avatar",
+      "translator",
+      "translator.avatar",
       "tune",
       "tune.composer",
       "tune.composer.avatar",

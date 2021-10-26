@@ -28,6 +28,9 @@
     "author": {
       "model": "person"
     },
+    "translator": {
+      "model": "person"
+    },
     "year": {
       "type": "integer"
     },
