@@ -18,8 +18,10 @@ module.exports = {
     const { slug } = ctx.params;
     const entity = await strapi.services.hymn.findOne({ slug }, [
       "author",
+      "author.avatar",
       "tune",
       "tune.composer",
+      "tune.composer.avatar",
       "tune.pdf",
       "tune.preview",
       "tune.midi",
