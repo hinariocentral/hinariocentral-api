@@ -26,7 +26,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "view_name"
+      "targetField": "view_name",
+      "required": true
     },
     "birth_year": {
       "type": "integer"
