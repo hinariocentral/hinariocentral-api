@@ -35,7 +35,8 @@
       "type": "integer"
     },
     "tune": {
-      "model": "tune"
+      "model": "tune",
+      "required": true
     },
     "meter": {
       "type": "string"

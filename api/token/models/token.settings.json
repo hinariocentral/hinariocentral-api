@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tokens",
+  "info": {
+    "name": "token",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "token": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 40,
+      "maxLength": 64,
+      "private": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
